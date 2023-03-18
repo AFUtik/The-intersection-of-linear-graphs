@@ -12,10 +12,10 @@ k2, b2 = 3, 2
 y2 = tuple(map(lambda x: k2 * x + b2, _x))
 
 def getIntersection():
-  x = symbols('x')
   if k1 == k2: 
     print("The directs don't cross")
     return
+  x = symbols('x')
   f1 = k1 * x + b1
   f2 = k2 * x + b2
   f3 = f1 - f2
