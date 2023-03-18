@@ -5,7 +5,7 @@ figure, ax = plt.subplots()
 
 _x = range(-10, 10)
 
-k1, b1 = 2, 5
+k1, b1 = 3, 5
 y1 = tuple(map(lambda x: k1 * x + b1, _x))
 
 k2, b2 = 3, 2
@@ -13,8 +13,8 @@ y2 = tuple(map(lambda x: k2 * x + b2, _x))
 
 def getIntersection():
   if k1 == k2: 
-    print("The directs don't cross")
-    return
+    return "The directs don't cross"
+  
   x = symbols('x')
   f1 = k1 * x + b1
   f2 = k2 * x + b2
