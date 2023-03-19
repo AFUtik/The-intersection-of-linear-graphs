@@ -1,11 +1,8 @@
 This project computes the intersection points of graphs of linear functions.
 
-You'll need for this project the library "sympy" for a decision of equations and "matplotlib" for forming graphs
+To install all the required libraries, use command 
 
 ```py
-pip install sympy
+pip install -r requirements.txt
 ```
 
-```py
-pip install matplotlib
-```
