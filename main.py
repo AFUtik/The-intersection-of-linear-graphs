@@ -1,3 +1,4 @@
+import math
 from sympy import symbols, solve
 import matplotlib.pyplot as plt
 
@@ -21,7 +22,7 @@ def getIntersection():
   f3 = f1 - f2
 
   sol_x = solve(f3, x)
-  sol_x = sol_x[0]
+  sol_x = float(sol_x[0])
   sol_y = k1 * sol_x + b1
   return sol_x, sol_y
 
@@ -37,7 +38,7 @@ def main():
 
   plt.show()
 
-print(getIntersection())
+print("The intersection: ", getIntersection())
 
 if __name__ == "__main__":
   main()
